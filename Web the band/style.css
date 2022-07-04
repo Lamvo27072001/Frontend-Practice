@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    height: 46.5px;
+}
+
+.nav #nav_ul>li {
+    display: inline-block;
+}
+
+.nav>#nav_ul>li:hover>a {
+    background-color: gray;
+    color: black;
+    font-weight: 500;
+}
+
+#more {
+    position: relative;
+}
+
+
+/* To make the tag a of list of id #nav_ul has white color */
+
+.nav>#nav_ul>li>a {
+    color: white;
+    padding: 16px 24px 16px 24px;
+}
+
+.nav #nav_ul li a {
+    text-decoration: none;
+    line-height: 46.5px;
+    /* padding: 16px 24px 16px 24px; */
+}
+
+.subnav {
+    position: absolute;
+    background-color: white;
+}
+
+.subnav {
+    /* display: none; */
+}
+
+#more:hover ul {
+    display: block;
+}
+
+.nav .subnav>li>a {
+    color: black;
+    display: block;
+    padding: 0px 40px 0px 24px;
+}
+
+.subnav>li {
+    list-style-type: none;
+}
+
+.subnav>li:hover>a {
+    background-color: gray;
+}
