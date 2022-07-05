@@ -96,12 +96,37 @@ body {}
 
 .search:hover {
     background-color: red;
+    cursor: pointer;
 }
 
 #slider {
-    height: 1000px;
-    background-color: aqua;
+    background-image: url('./assets/images/chicago.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 46.5px;
+    padding-top: 50%;
+    /*If set padding-top or padding-bottom with percent unit(%), the height will be equal % with the witdh*/
+    position: relative;
+}
+
+#slider .text {
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+
+#slider .text h4 {
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+#slider .text p {
+    padding: 10px;
+    font-weight: 600;
 }
 
 #content {
