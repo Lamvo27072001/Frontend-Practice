@@ -115,33 +115,53 @@
     <div id="footer"></div>
 
     <div class="model_buy_ticket">
-        <div class="close">
-            <ion-icon name="close-outline"></ion-icon>
-        </div>
+
         <div class="box">
+
+
             <header class="box-header">
+                <div class="box-close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
                 <ion-icon name="bag-outline"></ion-icon>
                 Tickets
             </header>
 
             <div class="box-body">
-                <label for="" class="box-label">
+                <label for="" class="box_label">
                     <ion-icon name="cart-outline"></ion-icon>
                     Tickets, $15 per person
                 </label>
-                <input type="text" class="box-input" placeholder="How many?">
+                <input type="text" class="box_input" placeholder="How many?">
 
-                <label for="" class="box-label">
+                <label for="" class="box_label">
                     <ion-icon name="people-outline"></ion-icon>
                     Send To
                 </label>
-                <input type="email" class="box-input" placeholder="Enter email">
+                <input type="email" class="box_input" placeholder="Enter email">
+
+                <button id="buy-tickets">
+                    PAY
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="box-footer">
+                <button class="close">
+                    Close
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <p class="link">
+                    Need
+                    <a href="">help?</a>
+                </p>
             </div>
         </div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

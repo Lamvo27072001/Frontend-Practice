@@ -286,8 +286,126 @@ body {}
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    /*Use align-item: center, to make all child element inside will be located on the middle of the height of parent div*/
+    justify-content: center;
+    /*Use justify-content: center, to make all child element inside will be located on the middle of the width of parent div*/
+    display: none;
+}
+
+.box-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 12px;
+}
+
+.box-close ion-icon {
+    width: 24px;
+    height: 36px;
+}
+
+.box-close:hover {
+    background-color: #cccccc;
+    color: black;
+    font-weight: 200;
+}
+
+.box {
+    width: 900px;
+    animation: boxShow ease 0.4s;
 }
 
 .box-header {
-    background-color: green;
+    position: relative;
+    background-color: #009688;
+    padding: 32px 16px;
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+}
+
+.box-header>ion-icon {
+    width: 44px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.box-body {
+    background-color: #fff;
+    padding: 0 16px;
+}
+
+.box_label {
+    display: block;
+}
+
+.box_label {
+    padding: 15px 0;
+}
+
+.box_input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+}
+
+#buy-tickets {
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #009688;
+    color: white;
+    border: none;
+}
+
+#buy-tickets:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.box-footer {
+    background-color: #fff;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    margin: 16px 0;
+    padding: 8px 16px;
+    font-size: 15px;
+    display: flex;
+    background-color: #f44336;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.close>ion-icon {
+    width: 20px;
+    height: 18px;
+}
+
+.close:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.link {
+    margin: 15px 0;
+}
+
+.link a {
+    color: #2397f3;
+}
+
+@keyframes boxShow {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
