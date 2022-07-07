@@ -17,9 +17,9 @@ body {}
     background-color: black;
     width: 100%;
     height: 46.5px;
+    z-index: 2;
     top: 0;
     left: 0;
-    z-index: 2;
     position: fixed;
 }
 
@@ -223,4 +223,71 @@ body {}
     padding: 2px 7px;
     margin-right: 16px;
     float: right;
+}
+
+.ticket_info {
+    padding: 32px 8px;
+    display: flex;
+    flex-flow: row;
+    margin: 0 -16px;
+}
+
+.place {
+    padding: 0 8px;
+    margin-bottom: 16px;
+    height: 100%;
+}
+
+.place img {
+    width: 245.33px;
+    height: 184px;
+}
+
+.place img:hover {
+    opacity: 0.6;
+}
+
+.place_detail {
+    padding: 0.150px 16px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    /*If use float:left or right to move element to left or right, the size can be not enough and make the children element
+    get out of parent div, so use overflow: hidden to fix this error */
+}
+
+.place_detail p {
+    margin: 15px 0px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: start;
+}
+
+.place_detail button {
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+    float: left;
+    /*If use float:left or right to move element to left or right, the size can be not enough and make the children element
+    get out of parent div, so use overflow: hidden to fix this error */
+}
+
+.place_detail button:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+.model_buy_ticket {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.box-header {
+    background-color: green;
 }
