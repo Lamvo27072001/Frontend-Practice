@@ -13,10 +13,10 @@
     <div id="header">
         <div class="nav">
             <ul id="nav_ul">
-                <li><a href="">HOME</a></li>
-                <li><a href="">BAND</a></li>
-                <li><a href="">TOUR</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#band">BAND</a></li>
+                <li><a href="#tour">TOUR</a></li>
+                <li><a href="#contact">CONTACT</a></li>
                 <li id="more">
                     <a href="">MORE<ion-icon name="caret-down-outline" style="position:relative; top:4px;;left:2px" ></ion-icon></a>
                     <ul class="subnav">
@@ -39,7 +39,7 @@
     </div>
     <div id="content">
         <!-- The band section -->
-        <div class="content-section">
+        <div id="band" class="content-section">
             <h2 class="section-heading">THE BAND</h2>
             <p class="sub-heading">We love music</p>
             <p class="section_info">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -64,7 +64,7 @@
 
         <!-- Tour dates section -->
         <div class="tour-dates">
-            <div class="content-section">
+            <div id="tour" class="content-section">
                 <h2 class="section-heading">TOUR DATES</h2>
                 <p class="sub-heading">Remember to book your tickets!</p>
                 <br>
@@ -107,12 +107,58 @@
 
         <!-- Contact section -->
 
-        <div class="content-section">
+        <div id="contact" class="content-section">
             <h2 class="section-heading">CONTACT</h2>
             <p class="sub-heading">Fan?Drop a note!</p>
+            <div class="contact">
+                <div class="contact_info">
+                    <p class="located">
+                        <ion-icon name="location-outline"></ion-icon>Chicago, US
+                    </p>
+                    <p class="phone">
+                        <ion-icon name="call-outline"></ion-icon>
+                        Phone: +00 151515
+                    </p>
+                    <p class="email">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        Email: mail@mail.com
+                    </p>
+                </div>
+                <form class="contact_form">
+                    <div class="top">
+                        <input type="text" id="fix1" class="box_contact" placeholder="Name" required>
+                        <input type="text" id="fix2" class="box_contact" placeholder="Email" required>
+                    </div>
+                    <input type="text" class="box_message" placeholder="Message">
+                    <input class="send" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <img src="./assets/images/map.jpg" alt="">
+    </div>
+    <div id="footer">
+        <div class="social_list">
+            <a href="">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="">
+                <ion-icon name="logo-snapchat"></ion-icon>
+            </a>
+            <a href="">
+                <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+            <a href="">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <p>Powered by <a id="link_w3" href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
         </div>
     </div>
-    <div id="footer"></div>
 
     <div class="model_buy_ticket">
 
