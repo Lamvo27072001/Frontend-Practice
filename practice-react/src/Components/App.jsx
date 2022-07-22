@@ -4,8 +4,9 @@ import Data from './Data';
 import List from './List';
 
 function App() {
+  
   const handleSubmit = () => {
-    console.log("Click  ")
+    setPeople([])
   }
 
   const [people, setPeople] = useState(Data)
