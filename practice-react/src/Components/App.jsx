@@ -1,17 +1,20 @@
 import React, {useState} from 'react';
 import './App.css';
+import Data from './Data';
 import List from './List';
 
 function App() {
   const handleSubmit = () => {
     console.log("Click  ")
   }
+
+  const [people, setPeople] = useState(Data)
   return ( 
     <div className="App">
       <main>
         <section className="container">
-          <h3>0 birthday today</h3>
-          <List />
+          <h3>{people.length} birthday today</h3>
+          <List people={people}/>
           <button onClick={handleSubmit}>Clear All</button>
         </section>
       </main>

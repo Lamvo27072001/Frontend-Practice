@@ -1,10 +1,10 @@
 import React from 'react'
 import Data from './Data'
 
-function List() {
+function List({people}) {
   
   return (
-    <div>List</div>
+    <div>{people.id}</div>
   )
 }
 
