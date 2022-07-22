@@ -1,11 +1,20 @@
-
+import React, {useState} from 'react';
 import './App.css';
 import List from './List';
 
 function App() {
-  return (
+  const handleSubmit = () => {
+    console.log("Click  ")
+  }
+  return ( 
     <div className="App">
-      <h2>Reminder Project Setup</h2>
+      <main>
+        <section className="container">
+          <h3>0 birthday today</h3>
+          <List />
+          <button onClick={handleSubmit}>Clear All</button>
+        </section>
+      </main>
     </div>
   );
 }
